@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: aqua;
+}
+
+/* Reset CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+button {
+  outline: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main */
+
+.landing {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+/*  */
+
+.hidden {
+  display: none;
+}
+
+#quotes {
+  margin: 0 auto;
+  padding: 38px 0 50px;
+  font-size: 16px;
+  line-height: 1.885714286;
+  letter-spacing: -0.03em;
+}
+
+#quotes p:last-child {
+  font-size: 14px;
+  padding-bottom: 3px;
+}
+
+#clock {
+  font-size: 90px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-form {
+  padding-bottom: 27px;
+}
+#login-form .input-group input {
+  display: inline-block;
+  border: none;
+  border-bottom: solid 1px #fff;
+  width: 150px;
+  height: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.input-group input::placeholder,
+#todo-form input::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+#login-form button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  transition: opacity 300ms ease-in-out;
+}
+
+#login-form button:hover {
+  opacity: 0.5;
+}
+
+#greeting {
+  font-size: 80px;
+}
+
+#login-form p,
+#todo-form p {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+#todo-form input {
+  display: inline-block;
+  border: none;
+  border-bottom: solid 1px #fff;
+  width: 250px;
+  height: 20px;
+  font-size: 15px;
+  transition: all 300ms ease-in-out;
+}
+
+#todo-form input:focus {
+  opacity: 50%;
+  color: #7b7b7e;
+  transform: scale(1.2);
+}
+
+#weather span:first-child {
+  position: absolute;
+  left: 19px;
+  bottom: -140px;
+}
+
+#weather span:last-child {
+  position: absolute;
+  left: 19px;
+  bottom: -160px;
+}
+
+/*>> 768px (Desktop) */
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 22px;
+    line-height: 1.3636363636;
+  }
+
+  #quotes p:last-child {
+    font-size: 18px;
+  }
+
+  #clock {
+    font-size: 130px;
+  }
+
+  #greeting {
+    font-size: 100px;
+  }
+
+  #login-form p,
+  #todo-form p {
+    font-size: 50px;
+    padding-bottom: 27px;
+  }
+
+  #weather p {
+    font-size: 13px;
+  }
+}
+
+/* Custom Grid Systeml -Fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
