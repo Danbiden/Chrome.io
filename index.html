@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Chrome App</title>
+    <script src="quotes.js" defer></script>
+    <script src="./background.js" defer></script>
+    <script src="./clock.js" defer></script>
+    <script src="./login.js" defer></script>
+    <script src="./todolist.js" defer></script>
+    <script src="./weather.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./grid.css">
+</head>
+<body>
+    <section class="landing">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-12">
+                    <!-- quotes -->
+                    <div id="quotes">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <!-- clock -->
+                    <div id="clock"></div>
+                    <!-- login -->
+                    <div class="login-container">
+                        <form action="#" class="hidden" id="login-form">
+                            <!-- <p>What is your name?</p> -->
+                            <div class="input-group">
+                                <input type="text" maxlength="15" required placeholder="Write your id">
+                                <button type="submit" class="login-btn">Login</button>
+                            </div>
+                        </form>   
+                        <h1 id="greeting" class="hidden"></h1>      
+                    </div>
+                    <!-- todo -->
+                    <form action="" id="todo-form">
+                        <p>What is your main focus today?</p>
+                        <input type="text" placeholder="Write a To Do and Press Enter" required />
+                    </form>
+                    <ul id="todo-list"></ul>
+                    <!-- weather -->
+                    <div id="weather">
+                        <span></span> 
+                        <br />
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+    
+</body>
+</html>
