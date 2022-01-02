@@ -104,14 +104,20 @@ button {
 
 #login-form .input-group input {
   display: inline-block;
-  border: none;
   border-bottom: solid 1px #fff;
   width: 150px;
-  height: 25px;
+  height: 20px;
   font-size: 11px;
   color: #fff;
   margin-right: 10px;
   text-align: center;
+  transition: all 300ms ease-in-out;
+}
+
+.input-group input:focus {
+  opacity: 50%;
+  color: #7b7b7e;
+  transform: scale(1.2);
 }
 
 .input-group input::placeholder,
@@ -125,7 +131,7 @@ button {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.6;
   letter-spacing: -0.05em;
   transition: opacity 300ms ease-in-out;
@@ -142,9 +148,17 @@ button {
 #login-form p,
 #todo-form p {
   font-size: 30px;
-  padding-bottom: 40px;
 }
 
+.todo {
+  margin: 0 auto;
+  width: 400px;
+  height: 180px;
+  overflow: auto;
+}
+#todo-form p {
+  padding-bottom: 10px;
+}
 #todo-form input {
   display: inline-block;
   border: none;
@@ -210,7 +224,8 @@ button {
   }
 
   #greeting {
-    font-size: 100px;
+    font-size: 90px;
+    padding-bottom: 40px;
   }
 
   #login-form p,
@@ -218,7 +233,12 @@ button {
     font-size: 50px;
     padding-bottom: 27px;
   }
-
+  .todo {
+    /* margin: 0 auto; */
+    width: 800px;
+    height: 280px;
+    overflow: auto;
+  }
   #todo-form input {
     width: 450px;
     height: 40px;
@@ -238,12 +258,12 @@ button {
 
   #weather span:first-child {
     left: -200px;
-    bottom: -150px;
+    bottom: 40px;
   }
 
   #weather span:last-child {
     left: -200px;
-    bottom: -175px;
+    bottom: 18px;
   }
 }
 
