@@ -25,10 +25,10 @@ function paintToDo(newTodo) {
     const button = document.createElement("button");
     button.innerText = "✅";
     button.addEventListener("click", deleteToDo);
-
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+    toDoList.scrollIntoView({block: 'end'});  
 }
 
 function handleToDoSubmit(event) {
