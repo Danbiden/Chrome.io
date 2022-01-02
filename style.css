@@ -20,6 +20,8 @@ textarea {
   border: none;
   outline: none;
   background: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 button:focus,
