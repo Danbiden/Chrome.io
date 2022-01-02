@@ -1,7 +1,7 @@
 const image= ["img/bg0.jpeg", "img/bg1.jpeg", "img/bg2.jpeg"];
 
 
-const images = ["https://images.unsplash.com/photo-1568792753721-222afb61e337?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHRoZSUyMHVrfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60",
+const images = [
                 "https://images.unsplash.com/photo-1487762488615-8a011458b53e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGVuZ2xhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
                 "https://images.unsplash.com/photo-1560706834-c8b400d29d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGVuZ2xhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
                 "https://images.unsplash.com/photo-1604403965718-439a879557da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGVkaW5idXJnaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
